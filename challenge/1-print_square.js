@@ -1,7 +1,7 @@
 #!/usr/bin/node
-const size = process.argv[2];
+const size = parseInt(process.argv[2], 10);
 
-if (size === undefined || isNaN(size)) {
+if (isNaN(size)) {
   process.exit();
 }
 
